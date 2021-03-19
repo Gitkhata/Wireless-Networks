@@ -1,0 +1,133 @@
+
+%\usepackage[utf8]{inputenc}
+
+%Style for 'Wireless Networks and Mobile Computing'
+%%%%%%%%% xelatex %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\usepackage{dirtytalk}
+
+\setdefaultlanguage{english}
+
+\setotherlanguage{hindi}
+\newfontfamily\devanagarifont[Script=Devanagari]{Shobhika} % Shobhika, Mukta, Kalimati, Lohit Devanagari, Lohit Nepali
+
+\defaultfontfeatures{Ligatures=TeX}
+
+
+\newcommand{\textnp}{\texthindi}
+\newenvironment{nepali}{\begin{hindi}}{\end{hindi}}
+
+%%%%%%%%%\LaTeXe end %%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{pdfpages}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage[toc]{appendix}
+\usepackage[hyphens]{url}
+%\usepackage{breakurl}
+\graphicspath{ {./graphics/} }
+\usepackage{float}
+\usepackage{afterpage}
+\usepackage{amsmath, amsfonts}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{lipsum}	
+
+
+\usepackage{lscape} %make single page landscape
+% \usepackage{parskip} %do not indent paragraph
+
+% \usepackage{charter} %alternative to default latex font
+
+\usepackage[Rejne]{fncychap} %Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%									   %
+% Fancy header / footer				   %
+%									   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}\pagestyle{fancy} %for fancy headers and footers
+\fancyhf{}
+\fancyhead[RE]{\it{\uppercase{\leftmark}}}
+\fancyhead[LO]{\it{\uppercase{\rightmark}}}
+\fancyhead[LE,RO]{\thepage}
+\fancyfoot{}
+%%%%%%%%%%%%%%%%%%headeer/ footer end%%%
+
+
+\usepackage{enumitem} % force all text to continue to the next line when using style=nextline in description lists with enumitem.
+% \setlist[description]{
+% 	style=nextline,
+% 	leftmargin=0pt,
+% } %Global setup. Local setup can be used
+
+
+%custom `steps' environment to generate step 1, step 2 ...
+\newlist{steps}{enumerate}{1}
+\setlist[steps, 1]{leftmargin=2cm, label = \textit{Step \arabic*}:}
+
+% \usepackage{fancyhdr}
+
+
+
+\raggedbottom  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%use build option: biber or bibtex
+%stle options: ieee, numeric, alphabetic, apa, nature, science
+\usepackage[backend=biber, bibencoding=auto, style=apa, sorting=none,
+]{biblatex} 
+%\addbibresource{./references/test.bib}
+\addbibresource{./references/wireless-communications-ref.bib}
+
+
+\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 		
+%			TOC Related
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand*\contentsname{Table of Contents} %rename toc title
+\setcounter{secnumdepth}{5} %document depth section, subsection aadi ko number hataune in TOC
+%----------------------------------------------
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 		
+%			Table Related
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{array,etoolbox}
+\usepackage{longtable} % insert a very long table, which takes up two or more pages in your document
+\usepackage[skip=0.8\baselineskip]{caption}  %gap between caption and table
+%\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt} % table cell space
+\renewcommand{\arraystretch}{1.5} %table row gap
+% ------------------------------------------
+
+\usepackage[linktoc=all]{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,      
+	urlcolor=black, % 
+%	bookmarks=true,
+	breaklinks=true,
+	bookmarksnumbered=true,
+%	pdfpagelabels=true
+}
+%\urlstyle{same} %this makes url look similar to normal text.
+
+\usepackage{glossaries}
+\makeglossaries

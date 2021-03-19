@@ -1,0 +1,72 @@
+
+% !TeX spellcheck = en_US
+% !TEX TS-program = xelatex 
+
+
+\documentclass[a4paper, 12pt, titlepage]{book}
+\usepackage{./jeevan-book-style} %preamble
+%\usepackage[showframe]{geometry}
+\usepackage{framed}
+\usepackage{pdfpages}
+\usepackage{csquotes}
+
+
+
+%\includeonly{
+%	./titlepage/title-page,
+%	./chapters/acronyms,
+%	./chapters/chapter-1,
+%	./chapters/chapter-2,
+%	./chapters/chapter-3,
+%	./chapters/chapter-4, dr
+%%	./chapters/chapter-5,
+%	./references/wireless-communications-ref.bib,
+%}
+
+\begin{document}
+
+\frontmatter
+\include{./titlepage/title-page}\thispagestyle{empty}
+
+
+\setcounter{tocdepth}{3} %set TOC depth, default:2, 
+\setcounter{secnumdepth}{5} %set section depth, starts with 0, default:3, 
+
+
+\tableofcontents \newpage\thispagestyle{empty}
+
+\listoffigures \addcontentsline{toc}{chapter}{\listfigurename} \newpage \thispagestyle{empty}
+
+\listoftables\addcontentsline{toc}{chapter}{List of Tables} \newpage \thispagestyle{empty}
+
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%							%
+%		Chapters			%
+%							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{./chapters/chapter-1} % Chapter-1: Wireless Networks
+\include{./chapters/chapter-2} % Chapter-2: Wireless LAN
+\include{./chapters/chapter-3} % Chapter-3: Global System For Mobile Communications
+\include{./chapters/chapter-4} % Chapter-4: Mobile Network Layer
+\include{./chapters/chapter-5} % Chapter-5: Mobile Transport Layer
+
+
+
+% questions
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Questions (2018 \& 2019)}
+\include{./chapters/questions}
+
+\backmatter
+
+\nocite{*}
+\renewcommand{\bibname}{Bibliography}
+\phantomsection
+\addcontentsline{toc}{chapter}{References}% add this to toc
+\printbibliography %prints bibliography list
+
+
+\end{document}
