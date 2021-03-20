@@ -1,4 +1,4 @@
-# BCA454WN Wireless Networks and Mobile Computing
+# BCA454WN Wireless Networks and Mobile Computing Notes for BCA-VIII
 
 ## How to Compile?
 
