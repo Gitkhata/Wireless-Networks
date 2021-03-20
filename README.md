@@ -1,6 +1,6 @@
 # BCA454WN Wireless Networks and Mobile Computing
 
-## How to Compile ?
+## How to Compile?
 
 ### Online
 1. Download source code
