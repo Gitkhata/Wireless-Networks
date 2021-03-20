@@ -15,7 +15,7 @@
 1. Download and Install [TexLive](https://www.tug.org/texlive/) 
 2. Download [TexStudio](https://www.texstudio.org/) or visual studio code with and install [this](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension
 3. Select XeLaTeX/LuaLaTeX as compiler
-4. Download Font [Shobhika](https://ctan.org/texarchive/fonts/shobhika) unicode font and install
+4. Download [Shobhika](https://ctan.org/texarchive/fonts/shobhika) unicode font and install
 5. Create directory named `build_dir` to store auxiliary files (optional)
 6. Compile
 
