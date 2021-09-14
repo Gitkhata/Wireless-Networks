@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-[download](https://github.com/Gitkhata/Wireless-Networks/edit/gh-pages/index.md) 
+
 
 You can use the [editor on GitHub](https://github.com/Gitkhata/Wireless-Networks/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
